@@ -1,0 +1,40 @@
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.zf-green {
+	color: #68b604;
+}
+
+<#Placeholder 1#>
+
+.btn-success {
+	background-color: #57a900;
+	background-image: -moz-linear-gradient(top, #70d900, #57a900);
+	background-image: -ms-linear-gradient(top, #70d900, #57a900);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70d900), to(#57a900));
+	background-image: -webkit-linear-gradient(top, #70d900, #57a900);
+	background-image: -o-linear-gradient(top, #70d900, #57a900);
+	background-image: linear-gradient(top, #70d900, #57a900);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
+}
+
+<#Placeholder 2#> Test <#PLaceholder 3::500293#> Cool thing!  <#My Custom::Haha#>
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+	background-color: #57a900;
+}
+
+<#Placeholder Last::Thomas Abplanalp#>
+
+div.container a.navbar-brand > img {
+	display: inline;
+	margin-right: 4px;
+	margin-top: -2px;
+}
