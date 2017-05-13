@@ -31,14 +31,17 @@
 - (void)mouseDown:(NSEvent *)event {
 	[super mouseDown:event];
 	
-	if(event.clickCount == 1) {
-		NSPoint pt = [self convertPoint:event.locationInWindow fromView:nil];
-		NSInteger index = [self.layoutManager characterIndexForPoint:pt inTextContainer:self.textContainer fractionOfDistanceBetweenInsertionPoints:NULL];
-		
-		TAPlaceholder *placeholder = [self.textStorage placeholderAtCharacterIndex:index];
-		
-		if([placeholder isKindOfClass:[TAPlaceholder class]]) {
-			self.selectedRange = NSMakeRange(index, 1);
+	NSPoint pt = [self convertPoint:event.locationInWindow fromView:nil];
+	NSInteger index = [self.layoutManager characterIndexForPoint:pt inTextContainer:self.textContainer fractionOfDistanceBetweenInsertionPoints:NULL];
+	TAPlaceholder *placeholder = [self.textStorage placeholderAtCharacterIndex:index];
+	
+	
+	if([placeholder isKindOfClass:[TAPlaceholder class]]) {
+		self.selectedRange = NSMakeRange(index, 1);
+		if(event.clickCount == 2) {
+			dispatch_async(dispatch_get_main_queue(), ^{
+				[self insertNewline:nil];
+			});
 		}
 	}
 }

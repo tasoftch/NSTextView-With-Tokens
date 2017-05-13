@@ -19,6 +19,8 @@
 		E9EA43E01EC60FD5003D5F2F /* Placeholders.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9EA43AF1EC60D55003D5F2F /* Placeholders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E9EA43E31EC61025003D5F2F /* TokenTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA43E21EC61025003D5F2F /* TokenTextView.m */; };
 		E9EA43E51EC61158003D5F2F /* TestScript.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9EA43E41EC61158003D5F2F /* TestScript.txt */; };
+		E9EA43EE1EC76C55003D5F2F /* NSString+Placeholders.h in Headers */ = {isa = PBXBuildFile; fileRef = E9EA43EC1EC76C55003D5F2F /* NSString+Placeholders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9EA43EF1EC76C55003D5F2F /* NSString+Placeholders.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA43ED1EC76C55003D5F2F /* NSString+Placeholders.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		E9EA43E11EC61025003D5F2F /* TokenTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenTextView.h; sourceTree = "<group>"; };
 		E9EA43E21EC61025003D5F2F /* TokenTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenTextView.m; sourceTree = "<group>"; };
 		E9EA43E41EC61158003D5F2F /* TestScript.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestScript.txt; sourceTree = "<group>"; };
+		E9EA43EC1EC76C55003D5F2F /* NSString+Placeholders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Placeholders.h"; sourceTree = "<group>"; };
+		E9EA43ED1EC76C55003D5F2F /* NSString+Placeholders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Placeholders.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				E9EA43B21EC60D55003D5F2F /* Placeholders.h */,
 				E9EA43BA1EC60D9F003D5F2F /* NSAttributedString+Placeholders.h */,
 				E9EA43BB1EC60D9F003D5F2F /* NSAttributedString+Placeholders.m */,
+				E9EA43EC1EC76C55003D5F2F /* NSString+Placeholders.h */,
+				E9EA43ED1EC76C55003D5F2F /* NSString+Placeholders.m */,
 				E9EA43BE1EC60F4A003D5F2F /* TAPlaceholder.h */,
 				E9EA43BF1EC60F4A003D5F2F /* TAPlaceholder.m */,
 				E9EA43B31EC60D55003D5F2F /* Info.plist */,
@@ -145,6 +151,7 @@
 			files = (
 				E9EA43BC1EC60D9F003D5F2F /* NSAttributedString+Placeholders.h in Headers */,
 				E9EA43C01EC60F4A003D5F2F /* TAPlaceholder.h in Headers */,
+				E9EA43EE1EC76C55003D5F2F /* NSString+Placeholders.h in Headers */,
 				E9EA43B41EC60D55003D5F2F /* Placeholders.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +260,7 @@
 			files = (
 				E9EA43C11EC60F4A003D5F2F /* TAPlaceholder.m in Sources */,
 				E9EA43BD1EC60D9F003D5F2F /* NSAttributedString+Placeholders.m in Sources */,
+				E9EA43EF1EC76C55003D5F2F /* NSString+Placeholders.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +461,7 @@
 				E9EA43B91EC60D55003D5F2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9EA43D71EC60F95003D5F2F /* Build configuration list for PBXNativeTarget "Test" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +470,7 @@
 				E9EA43D91EC60F95003D5F2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

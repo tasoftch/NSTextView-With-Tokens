@@ -21,7 +21,7 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
 }
 
-<#Placeholder 2#> Test <#PLaceholder 3::500293#> Cool thing!  <#My Custom::Haha#>
+<#Placeholder 2#> Test <#Placeholder 3::500293#> Cool thing!  <#My Custom::Haha#>
 
 .btn-success:hover,
 .btn-success:active,

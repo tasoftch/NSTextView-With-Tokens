@@ -1,10 +1,9 @@
 //
-//  Placeholders.h
+//  NSString+Placeholders.h
 //  Placeholders
 //
-//  Created by Thomas Abplanalp on 12.05.17.
-//	Copyright (c) 2017, TASoft Applications
-//	All rights reserved.
+//  Created by Thomas Abplanalp on 13.05.17.
+//  Copyright © 2017 TASoft Applications. All rights reserved.
 //
 //	Redistribution and use in source and binary forms, with or without
 //	modification, are permitted provided that the following conditions are met:
@@ -41,7 +40,7 @@
 //	software, in the software’s documentation, or on the web page for the software.
 //	The suggested format for the attribution is:
 //
-//	Includes <Name of Code> by Thomas Abplanalp.
+//	Includes Placeholders by Thomas Abplanalp.
 //
 //	where <Name of Code> would be replaced by the name of the specific source-code
 //	package you made use of. When possible, please link the text “Thomas Abplanalp”
@@ -49,5 +48,17 @@
 
 #import <Foundation/Foundation.h>
 
-#import <Placeholders/NSAttributedString+Placeholders.h>
-#import <Placeholders/NSString+Placeholders.h>
+extern NSString * const TAPlaceholderLabelKey;		// NSString *
+extern NSString * const TAPlaceholderContentKey;	// NSString *
+extern NSString * const TAPlaceholderRangeKey;		// NSValue *  containing the range of the occurence.
+
+
+@interface NSString (Placeholders)
+// Returns YES if the string contains at least one occurence of <# ... #(>)
+- (BOOL)hasPlaceholders;
+- (BOOL)hasPlaceholdersInRange:(NSRange)range;
+
+// Returns a list with all found placeholders
+- (NSArray <NSDictionary *> *)allPlaceholders;
+- (NSArray <NSDictionary *> *)placeholdersInRange:(NSRange)range;
+@end
